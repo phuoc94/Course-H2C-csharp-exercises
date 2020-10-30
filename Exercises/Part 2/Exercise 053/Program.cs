@@ -2,16 +2,18 @@
 
 namespace exercise_53
 {
-  class Program
-  {
-    public static void Main(String[] args)
+    class Program
     {
-      // Call your method here:
+        public static void Main(String[] args)
+        {
+            // Call your method here:
+            Division(3, 2);
+        }
 
-
+        // Write your method here:
+        public static void Division(int numerator, int denominator)
+        {
+            Console.WriteLine((double)numerator / denominator);
+        }
     }
-
-    // Write your method here:
-
-  }
 }

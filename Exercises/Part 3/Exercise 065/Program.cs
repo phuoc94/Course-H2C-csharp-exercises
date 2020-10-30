@@ -3,21 +3,21 @@ using System.Collections.Generic;
 
 namespace exercise_65
 {
-  class Program
-  {
-    public static void Main(string[] args)
+    class Program
     {
-      List<string> list = new List<string>();
-      while (true)
-      {
-        string input = Console.ReadLine();
-        if (input == "")
+        public static void Main(string[] args)
         {
-          break;
+            List<string> list = new List<string>();
+            while (true)
+            {
+                string input = Console.ReadLine();
+                if (input == "")
+                {
+                    break;
+                }
+                list.Add(input);
+            }
+            Console.WriteLine($"In total: {list.Count}");
         }
-        list.Add(input);
-      }
-
     }
-  }
 }

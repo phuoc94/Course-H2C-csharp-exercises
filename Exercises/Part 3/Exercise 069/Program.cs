@@ -3,21 +3,32 @@ using System.Collections.Generic;
 
 namespace exercise_69
 {
-  class Program
-  {
-    public static void Main(string[] args)
+    class Program
     {
-      List<int> list = new List<int>();
-      while (true)
-      {
-        int input = Convert.ToInt32(Console.ReadLine());
-        if (input == -1)
+        public static void Main(string[] args)
         {
-          break;
-        }
-        list.Add(input);
-      }
+            List<int> list = new List<int>();
+            while (true)
+            {
+                int input = Convert.ToInt32(Console.ReadLine());
+                if (input == -1)
+                {
+                    break;
+                }
+                list.Add(input);
+            }
+            Console.WriteLine("From where?");
+            int from = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Where to?");
+            int to = Convert.ToInt32(Console.ReadLine());
 
+            foreach (int li in list)
+            {
+                if (li > from && li < to)
+                {
+                    Console.WriteLine(li);
+                }
+            }
+        }
     }
-  }
 }

@@ -1,19 +1,22 @@
 namespace exercise_105
 {
-  public class Statistics
-  {
-    public int count { get; set; }
-    public int sum { get; set; }
-
-    public Statistics()
+    public class Statistics
     {
-      // initialize the variables here
-    }
+        public int count { get; set; }
+        public int sum { get; set; }
 
-    public void AddNumber(int number)
-    {
-      // write code here
-      
+        public Statistics()
+        {
+            // initialize the variables here
+            this.count = 0;
+            this.sum = 0;
+        }
+
+        public void AddNumber(int number)
+        {
+            // write code here
+            this.sum += number;
+            this.count++;
+        }
     }
-  }
 }

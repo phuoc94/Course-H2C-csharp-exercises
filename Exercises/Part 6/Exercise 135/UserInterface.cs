@@ -3,7 +3,7 @@ namespace exercise_135
     using System;
     public class UserInterface
     {
-        private JokeManager manager; 
+        private JokeManager manager;
 
         public UserInterface(JokeManager manager)
         {
